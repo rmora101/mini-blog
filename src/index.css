@@ -44,15 +44,15 @@
 .blog-preview {
     padding: 10px 16px;
     margin: 20px 0;
-    border-bottom: 5px solid #f59797;
+    border-bottom: 1px solid #f59797;
 }
 
 .blog-preview:hover{
-    box-shadow: 1px 3px 5px;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 }
 
 .blog-preview h2 {
     font-size: 22px;
     color: #e54b4b;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
