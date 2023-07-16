@@ -1,7 +1,7 @@
 import { useState } from "react";
+import BlogList from "./BlogList";
 
 const Home = () => {
-    
     const [blogs, setBlogs] = useState([
         {title: 'Ruth mora site', body: 'fhfeiuw fhusifgrh ...', author: 'me', id:1},
         {title: 'mini site', body: 'fhfeiuw fhusifgrh ...', author: 'u', id:2}
@@ -9,14 +9,9 @@ const Home = () => {
 
     return ( 
         <div className="home">
-            {blogs.map((blog) => (
-                <div className="blog-preview" key={blog.id}>
-                    <h2>{blog.title}</h2>
-                    <p> written by {blog.author}</p>
-                </div>
-            ))}
+            <BlogList blogs={blogs} title='All Posts' />
         </div>
     );
 }
- 
+
 export default Home;
