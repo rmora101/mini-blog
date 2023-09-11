@@ -1,6 +1,6 @@
 const BlogList = ({blogs, title, handleDelete}) => {
 
-    // const blogs = props.blogs;
+    // const blogs = props.blogs; another way of making props
 
     return (
         <div className="blog-list">
