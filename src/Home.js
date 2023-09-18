@@ -10,7 +10,7 @@ const Home = () => {
     } // handle delete in home file to update the state set blogs. not blogs so that org data not messed
 
     useEffect(() => {
-        fetch('http://localhost:8000/blogs')
+        fetch('http://localhost:3000/blogs')
             .then(res => {
                 return res.json();
             })
